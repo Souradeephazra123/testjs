@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+</head>
+
+<body style="display: flex;justify-content: center;align-items: center;height: 100vh;">
+
+    <div style="max-width: 300px;border-radius: 10px;border: 1px solid black;padding: 10px;">
+        <img style="width: 100%; height: 300px;object-fit: contain;" src="/51+SoS8bWbL._AC_UY327_FMwebp_QL65_.webp"
+            alt="">
+        <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+            <h3>Laptop</h3>
+            <p>$44990</p>
+            <button onclick="addToCart()"
+                style="background-color: rgb(0, 225, 255);border: none;border-radius: 3px;height: 30px;">
+                add to cart
+            </button>
+        </div>
+    </div>
+    <script>
+        let cartItemCount = 0;
+
+        function addToCart() {
+            cartItemCount++;
+          
+            alert('Item added to the cart!');
+        }   
+    </script>
+</body>
+
+
+</html>
