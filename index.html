@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Website</title>
 </head>
+<!-- body is using flex to show the container at the center of the box -->
 
 <body style="display: flex;justify-content: center;align-items: center;height: 100vh;">
 
+    <!-- border 1px solid, padding= 10px, max-width of the contyainer is 300px -->
     <div style="max-width: 300px;border-radius: 10px;border: 1px solid black;padding: 10px;">
+        <!-- image width  will be 100% , object will contain the parent div, a fixed height is provided  -->
         <img style="width: 100%; height: 300px;object-fit: contain;" src="/51+SoS8bWbL._AC_UY327_FMwebp_QL65_.webp"
-            alt="">
+            alt="No image">
+        <!-- now these are the details like name,price and add to cart button -->
+        <!-- using flex to align these items at center, also flex direction is column -->
         <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
             <h3>Laptop</h3>
             <p>$44990</p>
+            <!-- by clicking this button ,it will show the alert  -->
             <button onclick="addToCart()"
                 style="background-color: rgb(0, 225, 255);border: none;border-radius: 3px;height: 30px;">
                 add to cart
@@ -22,11 +28,12 @@
         </div>
     </div>
     <script>
+        // at fist cartitemcount=0
         let cartItemCount = 0;
-
+        //cartitemcount will increase at first , then show alert
         function addToCart() {
             cartItemCount++;
-          
+
             alert('Item added to the cart!');
         }   
     </script>
